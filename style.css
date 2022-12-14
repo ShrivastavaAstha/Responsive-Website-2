@@ -1,0 +1,181 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    background-color: rgb(252, 252, 252);
+    height:100vh;
+    background-size: cover;
+
+}
+
+.clearfix::after{
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear:both;
+}
+.row{
+    max-width: 1180px;
+    margin:0 auto;
+}
+
+.logo{
+    height: 120px;
+    width:auto;
+    float:left;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+    background-color: aquamarine;
+
+}
+
+.main-nav li{
+    display:inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    color: rgb(29, 29, 33);
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+.main-nav li a:hover{
+    /* border-bottom: 2px solid rgb(19, 24, 23); */
+    background-color: black;
+    color: aquamarine;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+
+h1{
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+.b1{
+    background-color: aquamarine;
+    color:black;
+    border: 1px solid rgb(0, 0, 0);
+}
+.b1:hover{
+    background-color: black;
+    color:aquamarine;
+    border: 1px solid aquamarine;
+}
+.b2{
+    background-color: aquamarine;
+    color:black;
+    border:1px solid black;
+}
+.b2:hover{
+    background-color: black;
+    color:aquamarine;
+    border: 1px solid aquamarine;
+}
+.centerDiv{
+    text-align: center;
+    color:black;
+}
+.centerDiv:hover{
+    color:aqua;
+}
+#traveltriangle{ font-family: 'Dosis' , sans-serif;
+    font-weight: lighter;
+    background-color: aqua;
+}
+#traveltriangle:hover{
+    background-color: black;
+    font-weight: lighter;
+}
+iframe{max-width: 90%;}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color:aquamarine;
+}
+
+footer h4{
+    color: rgb(2, 2, 2);
+    font-family: 'Dosis' , sans-serif;
+    line-height: 100px;
+    text-align: center;
+}
+.colorchange{
+    animation:colorchange 1s infinite;
+}
+@keyframes colorchange{
+    0%{color:rgb(4, 92, 62);}
+    25%{color:rgb(49, 168, 168);}
+    50%{color:rgb(149, 211, 213);}
+    100%{color:rgb(4,92,62);}
+}
+.iconbar{
+    display:none;
+}
+
+@media only screen and (max-width: 1180px){
+    .main-content-header{
+        width:100%;
+        padding:0.2%;
+    }
+} 
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+@media only screen and (max-width:768px) {
+    h1{font-size: 180%;}
+
+    .main-nav{display:none;}
+
+    .iconbar{display: inline;
+      color:black;
+      float:right;
+      margin-top: 30px;
+      margin-right:20px;
+    }
+    .iconbar:hover{color:aquamarine;}
+
+    main-nav{
+        float: left;
+    }
+
+    .main-nav li{
+        display:block;
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    .b1{
+        margin-bottom: 20px;
+    }
+    h1{font-size: 160%;}
+}
+
+
